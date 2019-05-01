@@ -12,6 +12,6 @@
 
 - name: Grab Zabbix Source
   subversion:
-    repo: svn://svn.zabbix.com/tags/3.0.27 /usr/src/zabbix
+    repo: svn://svn.zabbix.com/tags/3.0.27 
     dest: /usr/src/zabbix
     export: yes
