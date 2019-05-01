@@ -1,6 +1,6 @@
 ---
 - name: Autogen Config
-  comand: ./autogen.sh
+  command: ./autogen.sh
   args: 
     chdir: /tmp/zbx_systemd_module
 
