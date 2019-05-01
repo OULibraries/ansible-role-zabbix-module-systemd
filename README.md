@@ -8,8 +8,8 @@ _Zabbix module that enables Zabbix to query the systemd D-Bus API for native and
 Requirements
 ------------
 
-CentOS7
-Zabbix Agent - 3.0
+> * CentOS 7
+> * Zabbix Agent - 3.0
 
 Role Variables
 --------------
