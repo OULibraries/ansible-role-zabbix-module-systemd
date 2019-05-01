@@ -1,5 +1,5 @@
 ---
-- include: {{ item }}
+- include: "{{ item }}"
   with_items:
     - yum.yml
     - source.yml
