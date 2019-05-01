@@ -3,7 +3,9 @@ Zabbix SystemD Monitoring Module
 
 Returns state of all enabled SystemD services
 
+
 Services can be narrowed down using the {#SERVICE.NAME} filter in Zabbix 
+
 See Filters in https://www.zabbix.com/documentation/3.0/manual/discovery/low_level_discovery#discovery_of_file_systems
 
 
