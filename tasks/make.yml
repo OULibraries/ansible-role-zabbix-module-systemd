@@ -12,3 +12,5 @@
     chdir: /tmp/zbx_systemd_module
     target: install 
   become: true
+  notify: 
+    - restart zabbix-agent
