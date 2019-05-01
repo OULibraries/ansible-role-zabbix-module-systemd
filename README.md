@@ -4,6 +4,7 @@ Zabbix SystemD Monitoring Module
 Implementation of https://github.com/cavaliercoder/zabbix-module-systemd
 
 _Zabbix module that enables Zabbix to query the systemd D-Bus API for native and granular system state monitoring + relative cgroup (CPU, MEM, IO, ...) metrics._
+
 Requirements
 ------------
 
