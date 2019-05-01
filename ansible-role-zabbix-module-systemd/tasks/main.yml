@@ -1,0 +1,10 @@
+---
+- hosts: dev
+  become: true
+  include: {{ item }}
+  with_items:
+    - yum.yml
+    - source.yml
+    - configure.yml
+    - make.yml
+    - selinux.yml

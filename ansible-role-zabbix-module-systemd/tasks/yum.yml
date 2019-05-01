@@ -1,0 +1,12 @@
+---
+- name: Install Module Dependencies
+  yum:
+   name: 
+     - libtool 
+     - make
+     - autoconf
+     - automake
+     - dbus-devel
+     - svn
+  state: present
+  tags: yum

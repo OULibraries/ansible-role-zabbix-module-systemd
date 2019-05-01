@@ -1,0 +1,11 @@
+---
+- name: Unarchive Zabbix SystemD Module
+  unarchive:
+    src: http://s3.cavaliercoder.com/zabbix-contrib/release/zabbix-module-systemd-1.2.0.tar.gz
+    dest: /tmp/zbx_systemd_module/
+
+- name: Grab Zabbix Source
+  subversion:
+    repo: svn://svn.zabbix.com/tags/3.0.27 /usr/src/zabbix
+    dest: /usr/src/zabbix
+    export: yes

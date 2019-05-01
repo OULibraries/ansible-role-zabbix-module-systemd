@@ -1,0 +1,14 @@
+---
+- name: Build target
+  make: 
+    chdir: /tmp/zbx_systemd_module
+  params:
+    prefix: /usr
+    sysconfdir: /etc
+    libdir: /usr/lib64
+
+- name: Build target
+  make: 
+    chdir: /tmp/zbx_systemd_module
+    target: install 
+  become: true

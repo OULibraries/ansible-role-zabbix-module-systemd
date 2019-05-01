@@ -1,0 +1,3 @@
+---
+- name: Enable SELinux Module
+  command: semodule -v -i /usr/share/selinux/packages/zabbix-module-systemd/libzbxsystemd.pp
