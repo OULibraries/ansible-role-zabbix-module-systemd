@@ -1,4 +1,9 @@
 ---
+- name: Create target tmp dir
+  file:
+    path: /tmp/zbx_systemd_module
+    state: directory
+
 - name: Unarchive Zabbix SystemD Module
   unarchive:
     src: http://s3.cavaliercoder.com/zabbix-contrib/release/zabbix-module-systemd-1.2.0.tar.gz
