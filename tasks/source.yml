@@ -3,6 +3,7 @@
   unarchive:
     src: http://s3.cavaliercoder.com/zabbix-contrib/release/zabbix-module-systemd-1.2.0.tar.gz
     dest: /tmp/zbx_systemd_module/
+    remote_src: yes
 
 - name: Grab Zabbix Source
   subversion:
