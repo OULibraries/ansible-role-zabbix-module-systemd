@@ -8,5 +8,5 @@
      - automake
      - dbus-devel
      - svn
-  state: present
+   state: present
   tags: yum
