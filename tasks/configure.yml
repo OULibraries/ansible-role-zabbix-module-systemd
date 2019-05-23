@@ -1,11 +1,6 @@
 ---
-- name: Autogen Config
-  command: ./autogen.sh
-  args: 
-    chdir: /tmp/zbx_systemd_module
-
 - name: Run Configure
   command: ./configure --with-zabbix=/usr/src/zabbix --enable-semodule
   args:
-    chdir: /tmp/zbx_systemd_module
+    chdir: /tmp/zbx_systemd_module/zabbix-module-systemd-1.2.0
 

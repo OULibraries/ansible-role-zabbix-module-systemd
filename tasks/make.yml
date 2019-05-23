@@ -1,16 +1,12 @@
 ---
 - name: Build target
-  make: 
-    chdir: /tmp/zbx_systemd_module
+  make:
+    chdir: /tmp/zbx_systemd_module/zabbix-module-systemd-1.2.0
+    target: install
     params:
       prefix: /usr
       sysconfdir: /etc
       libdir: /usr/lib64
-
-- name: Build target
-  make: 
-    chdir: /tmp/zbx_systemd_module
-    target: install 
   become: true
-  notify: 
+  notify:
     - restart zabbix-agent
