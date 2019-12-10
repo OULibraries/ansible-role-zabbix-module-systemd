@@ -5,7 +5,8 @@
     dest: /tmp/zbx_systemd_module/
 
 - name: Grab Zabbix Source
-  subversion:
-    repo: svn://svn.zabbix.com/tags/3.0.27 /usr/src/zabbix
+  git:
+    repo: https://github.com/zabbix/zabbix.git
     dest: /usr/src/zabbix
+    version: release/4.0
     export: yes
